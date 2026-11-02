@@ -1,0 +1,38 @@
+name: UpCoins
+version: 0.1.0
+main: dev.updraft.upcoins.UpCoinsPlugin
+description: Server-wide currency, cosmetics and perks.
+author: UpDraft
+api-version: '${uc.apiversion}'
+softdepend: [LuckPerms, Essentials, TAB, LPC]
+commands:
+  upcoins:
+    description: UpCoins balance and admin commands.
+    aliases: [uc, coins]
+    usage: /<command> [balance|give|set|take|event|reload]
+  cosmetics:
+    description: Browse, buy and toggle UpCoins cosmetics.
+    aliases: [cosmetic]
+    usage: /<command> [fire-trail|wings]
+permissions:
+  upcoins.balance:
+    description: See your own balance with /upcoins.
+    default: true
+  upcoins.balance.others:
+    description: See other players' balances.
+    default: op
+  upcoins.give:
+    description: Give an exact amount of UpCoins.
+    default: op
+  upcoins.set:
+    description: Set a player's balance.
+    default: op
+  upcoins.take:
+    description: Remove UpCoins from a balance.
+    default: op
+  upcoins.event:
+    description: Pay an event winner from /upcoins event.
+    default: op
+  upcoins.reload:
+    description: Reload config.yml.
+    default: op

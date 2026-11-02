@@ -1,0 +1,47 @@
+# UpCoins configuration
+# Coins are earned by playtime, join streaks and event wins, and spent on cosmetics/perks.
+
+storage:
+  # flatfile = single server (data.yml), mysql = shared database for every server on the network
+  type: mysql
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    database: upcoins
+    user: upcoins
+    password: ""
+
+rewards:
+  playtime:
+    # Pay this amount every interval while online
+    interval-minutes: 10
+    amount: 5
+  streak:
+    # Reward for logging in on consecutive days
+    base: 10
+    per-day: 5
+    max: 50
+  event:
+    # Default payout for /upcoins event <player>
+    amount: 50
+
+cosmetics:
+  fire-trail:
+    price: 100
+  wings:
+    price: 250
+
+perks:
+  tag:
+    # [COIN COLLECTER] is granted through the LuckPerms group below,
+    # which TAB and LPC pick up as their prefix source.
+    enabled: true
+    group: coin-collector
+    prefix: "&8[&6COIN COLLECTER&8]"
+    # Only players ABOVE this amount get the tag
+    minimum: 15
+  extra-homes:
+    # Grants essentials.sethome.multiple.upcoins (define that rank in Essentials' config)
+    enabled: true
+    minimum: 25
+    permission: "essentials.sethome.multiple.upcoins"
