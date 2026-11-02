@@ -4,7 +4,7 @@ main: dev.updraft.upcoins.UpCoinsPlugin
 description: Server-wide currency, cosmetics and perks.
 author: UpDraft
 api-version: '${uc.apiversion}'
-softdepend: [LuckPerms, Essentials, TAB, LPC]
+softdepend: [LuckPerms, FoxHomes, Essentials, TAB, LPC]
 commands:
   upcoins:
     description: UpCoins balance and admin commands.

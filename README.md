@@ -55,12 +55,8 @@ Once bought a cosmetic is permanent; `/cosmetics <name>` toggles it on or off.
 ## Perks
 
 * **More homes in survival** – above `perks.extra-homes.minimum` (default 25) coins the player is
-  granted `essentials.sethome.multiple.upcoins` through LuckPerms. In Essentials' `config.yml` add
-  the matching rank, e.g.:
-  ```yaml
-  sethome-multiple:
-    upcoins: 5
-  ```
+  granted `foxhomes.maxhomes.10`, i.e. **10 homes in FoxHomes** (raise the number in the config to
+  give more). LuckPerms applies it the moment a balance crosses the threshold, no reload needed.
 * **`[COIN COLLECTER]` tag** – above `perks.tag.minimum` (default 15) coins, players are added to
   the `coin-collector` LuckPerms group, which gets created automatically with the prefix from
   `perks.tag.prefix`. **TAB** and **LPC** read prefixes straight from LuckPerms, so the tag shows

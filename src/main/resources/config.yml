@@ -41,7 +41,8 @@ perks:
     # Only players ABOVE this amount get the tag
     minimum: 15
   extra-homes:
-    # Grants essentials.sethome.multiple.upcoins (define that rank in Essentials' config)
+    # FoxHomes reads limits from foxhomes.maxhomes.<number>;
+    # on Essentials servers change it to essentials.sethome.multiple.upcoins
     enabled: true
     minimum: 25
-    permission: "essentials.sethome.multiple.upcoins"
+    permission: "foxhomes.maxhomes.10"
