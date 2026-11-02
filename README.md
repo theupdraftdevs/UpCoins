@@ -12,11 +12,13 @@ BungeeCord / Velocity without any proxy-side install.
 | Jar                  | For                        |
 |----------------------|----------------------------|
 | `UpCoins-1.21.11.jar`| Minecraft 1.21.11 (Java 21)|
+| `UpCoins-1.21.4.jar` | Minecraft 1.21.4 (Java 21) |
 | `UpCoins-26.3.jar`   | Minecraft 26.3 (Java 25)   |
 
 ```
 mvn clean package -P1.21.11
-mvn clean package -P26.3
+mvn package -P1.21.4
+mvn package -P26.3
 ```
 
 Both jars land in `target/`. The only difference is the API version they are compiled against,

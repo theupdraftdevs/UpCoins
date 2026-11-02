@@ -63,6 +63,15 @@
             </properties>
         </profile>
         <profile>
+            <id>1.21.4</id>
+            <properties>
+                <paper.version>1.21.4-R0.1-SNAPSHOT</paper.version>
+                <java.release>21</java.release>
+                <uc.apiversion>1.21</uc.apiversion>
+                <uc.jarname>1.21.4</uc.jarname>
+            </properties>
+        </profile>
+        <profile>
             <id>26.3</id>
             <properties>
                 <paper.version>26.3.build.237-stable</paper.version>
